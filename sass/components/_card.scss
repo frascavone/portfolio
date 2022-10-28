@@ -1,0 +1,115 @@
+.card {
+  width: 40%;
+  height: 40rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+
+  margin: 1.5rem 0 1.5rem;
+
+  &__side {
+    font-size: $font-size-normal;
+    height: 40rem;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(#000, 0.2);
+    border-radius: 1rem;
+
+    &--front {
+      background-position: center;
+      background-size: cover;
+      font-size: 4rem;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      color: $color-green-fluo;
+
+      &--volare {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/volare.png);
+      }
+
+      &--indovina-il-numero {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/indovina-numero.png);
+      }
+      &--to-do-list {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/to-do-list.png);
+      }
+
+      &--mapty {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/mapty.png);
+      }
+
+      &--forkify {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/forkify.png);
+      }
+    }
+
+    &--back {
+      background-color: #f7f7f7;
+      padding: 1.5rem;
+      transform: rotateY(-180deg);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+
+  &:hover &__side--front,
+  &:active &__side--front {
+    transform: rotateY(180deg);
+    box-shadow: none;
+  }
+
+  &:hover &__side--back,
+  &:active &__side--back {
+    transform: rotateY(0deg);
+    box-shadow: none;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &--cta {
+      text-decoration: none;
+      margin: 2rem;
+    }
+  }
+}

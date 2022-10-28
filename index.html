@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francesco Scavone | web developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <i class="fa-solid fa-bars" id="nav-icon--bars"></i>
+        <i class="fa-solid fa-xmark" id="nav-icon--close"></i>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">chi sono</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#skills" class="navigation__link">skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">progetti</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">contatti</a>
+          </li>
+          <li class="navigation__item">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="img/CVscavone.pdf"
+              class="navigation__link navigation__link--cv"
+              >vedi CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="nav-bar">
+      <a href="#about" class="nav-bar__item"> chi sono </a>
+      <a href="#skills" class="nav-bar__item"> skills </a>
+      <a href="#projects" class="nav-bar__item"> progetti </a>
+      <a href="#contacts" class="nav-bar__item"> contatti </a>
+      <a
+        rel="noreferrer"
+        target="_blank"
+        href="img/CVscavone.pdf"
+        class="nav-bar__item btn"
+        >vedi CV</a
+      >
+    </nav>
+    <header class="hero">
+      <span class="hero__tiny">Ciao, mi chiamo </span>
+      <span class="hero__name">Francesco Scavone</span>
+      <span class="hero__tiny">e sono uno</span>
+      <span class="hero__info">junior web developer</span>
+      <a class="btn hero__btn btn--animated" href="#about">Scopri di più</a>
+    </header>
+
+    <section id="about" class="about">
+      <span class="section__title about__title">Chi sono</span>
+      <div class="about__container">
+        <div class="about__image">
+          <img alt="Propic" class="propic" src="img/propic.jpg" />
+        </div>
+
+        <div class="about__info">
+          <p class="about__info-text">
+            Mi chiamo Francesco, ho 34 anni, sono lucano e vivo ad Arezzo.
+          </p>
+          <!-- <p class="about__info-text">
+            Mi ritengo una persona curiosa, sempre in cerca di ciò che davvero
+            mi appassioni, e il mio percorso lavorativo testimonia la mia voglia
+            di mettermi sempre alla prova con nuove sfide.
+          </p> -->
+          <p class="about__info-text">
+            Da sempre affascinato dal mondo dell'informatica, nel 2021 ho
+            seguito un corso professionale per Programmatore Informatico, e da
+            un anno sto studiando sviluppo web da autodidatta.
+          </p>
+          <div class="about__btn">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="btn btn__dark"
+              href="img/CVscavone.pdf"
+            >
+              Vedi CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <span class="section__title skills__title">skills</span>
+      <div class="skills__row">
+        <div class="skills__box">
+          <i class="skills__icon fa-brands fa-html5"></i>
+
+          <p class="skills__text">Creazione di pagine web in codice HTML</p>
+        </div>
+        <div class="skills__box">
+          <i class="skills__icon fa-brands fa-sass"></i>
+
+          <p class="skills__text">
+            Formattazione stile pagine web responsive con CSS e SASS
+          </p>
+        </div>
+        <div class="skills__box">
+          <i class="skills__icon fa-brands fa-js"></i>
+
+          <p class="skills__text">
+            Creazione di funzioni, OOP e AJAX in Javascript
+          </p>
+        </div>
+
+        <div class="skills__box">
+          <i class="skills__icon fa-solid fa-database"></i>
+
+          <p class="skills__text">Gestione dei database MySQL</p>
+        </div>
+        <div class="skills__box">
+          <i class="skills__icon fa-brands fa-php"></i>
+
+          <p class="skills__text">
+            Gestione dati inseriti e invio email in PHP
+          </p>
+        </div>
+        <div class="skills__box">
+          <i class="skills__icon fa-brands fa-bootstrap"></i>
+
+          <p class="skills__text">
+            Creazione di pagine web con l'uso di componenti Bootstrap
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <span class="section__title">progetti</span>
+      <div class="projects__row">
+        <div class="card">
+          <div
+            class="card__side card__side--front card__side--front--to-do-list"
+          >
+            <span>To do list</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Piccolo esercizio in cui l'utente aggiunge elementi ad una lista
+                tramite input, conservando gli elementi della lista anche dopo
+                aver ricaricato la pagina.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/to-do-list"
+              >
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://www.frascavone.it/to-do-list/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="card card__2">
+          <div
+            class="card__side card__side--front card__side--front--indovina-il-numero"
+          >
+            <span>Indovina il numero</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Piccolo gioco in cui l'utente cerca di indovinare un numero
+                generato randomicamente dall'app. <br />
+                Esercizio sulla manipolazione del DOM.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/Indovina-il-numero"
+              >
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://frascavone.github.io/Indovina-il-numero/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="projects__row">
+        <div class="card">
+          <div class="card__side card__side--front card__side--front--volare">
+            <span>Volare</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Il mio primo progetto. <br />
+                Una web app dove l'utente prenota dei finti voli tra i
+                principali aeroporti italiani, interrogando un database di
+                tratte aeree di mia creazione, con l'implementazione di PayPal.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/volare"
+              >
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://www.frascavone.it/volare/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__row">
+        <div class="card">
+          <div class="card__side card__side--front card__side--front--mapty">
+            <span>Mapty</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Progetto Javascript. <br />
+                Una web app che permette di mappare i propri allenamenti tramite
+                l'uso di una API di terze parti per la geolocalizzazione.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/mapty-frascavone"
+              >
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://www.frascavone.it/mapty/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__side card__side--front card__side--front--forkify">
+            <span>Forkify</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Progetto Javascript. <br />
+                Web app che permette di cercare anche in base agli ingredienti
+                tra migliaia di ricette di tutto il mondo, tramite l'utilizzo di
+                una API di terze parti. È possibile anche aggiungere ricette ai
+                preferiti o crearne di proprie.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/forkify-frascavone"
+              >
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://www.frascavone.it/forkify/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacts" class="contacts">
+      <h2 class="section__title contacts__title">Contatti</h2>
+      <div class="contacts__wrapper">
+        <p>
+          Per info non esitare a scrivermi via email o sui social
+          <br />
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="btn"
+            href="mailto:fra.scavone88@gmail.com"
+            >Email</a
+          >
+        </p>
+
+        <div class="social__links">
+          <a
+            rel="noreferrer"
+            href="https://www.facebook.com/francesco.scavone.16"
+            target="_blank"
+          >
+            <i class="fa fa-facebook m-2 fa-inverse fa-2x"></i>
+          </a>
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a> -->
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/frascavone/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin m-2 fa-inverse fa-2x"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/frascavone"
+            target="_blank"
+          >
+            <i class="fa fa-github m-2 fa-inverse fa-2x"></i>
+          </a>
+        </div>
+
+        <hr />
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i
+            style="color: #fff; margin-top: 2rem"
+            class="fa fa-angle-up fa-2x"
+            aria-hidden="true"
+          ></i>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/643c5ce1d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const checkbox = document.getElementById('navi-toggle');
+      const navItems = document.querySelectorAll('.navigation__item');
+
+      const changeNavIcon = function () {
+        if (checkbox.checked) {
+          document.querySelector('#nav-icon--bars').style.display = 'none';
+          document.querySelector('#nav-icon--close').style.display =
+            'inline-block';
+        } else {
+          document.querySelector('#nav-icon--bars').style.display =
+            'inline-block';
+          document.querySelector('#nav-icon--close').style.display = 'none';
+        }
+      };
+      checkbox.addEventListener('change', changeNavIcon);
+
+      navItems.forEach((item) =>
+        item.addEventListener('click', function () {
+          checkbox.checked = false;
+          changeNavIcon();
+        })
+      );
+    </script>
+  </body>
+</html>

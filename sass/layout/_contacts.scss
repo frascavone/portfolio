@@ -1,0 +1,23 @@
+.contacts {
+  min-height: 30vh;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: $font-size-medium;
+  margin-bottom: 2rem;
+  color: #fff;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.social__links {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}

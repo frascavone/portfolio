@@ -1,0 +1,48 @@
+.skills {
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    box-sizing: border-box;
+    width: 30%;
+    @include respond(phone) {
+      width: 40%;
+    }
+    background-color: #eee;
+    font-size: 1.25rem;
+    padding: 2.5rem;
+    margin: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+  }
+
+  &__icon {
+    font-size: 6em;
+    background-image: linear-gradient(to right, #20e73b, #17d417);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin: 1rem;
+  }
+}

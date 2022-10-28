@@ -1,0 +1,49 @@
+.about {
+  min-height: 70vh;
+  padding: 10rem 0;
+  background-color: #eee;
+  color: $color-blue-dark;
+  clip-path: polygon(0 10%, 100% 0, 100% 85%, 0 100%);
+
+  &__container {
+    @include absCenter;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    height: 100%;
+    @include absCenter;
+  }
+  &__info {
+    width: 50%;
+    height: 100%;
+    font-size: $font-size-medium;
+    // padding-right: 2rem;
+    margin-top: 1.2rem;
+    @include respond(phone) {
+      width: 80%;
+      text-align: center;
+      font-size: 2rem;
+    }
+    &-text {
+      margin: 1rem;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}
+
+.propic {
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: $font-open;
+  font-weight: 400;
+}
+
+.section__title {
+  color: $color-blue-dark;
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: $font-mono;
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}

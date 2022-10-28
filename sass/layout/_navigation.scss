@@ -1,0 +1,111 @@
+.navigation {
+  display: none;
+  @include respond(phone) {
+    display: inline-block;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background-color: $color-blue-dark;
+    color: $color-green-fluo;
+    @include absCenter;
+
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    border-radius: 5px;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+
+    border: 2px solid $color-green-fluo;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#eef2f3, #8e9eab);
+    z-index: 1000;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    width: 100%;
+
+    opacity: 0;
+    width: 0;
+    transition: all 0.4s;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+  }
+  &__link {
+    font-size: 2rem;
+    font-family: $font-mono;
+    font-weight: 400;
+    color: $color-blue-dark;
+    text-shadow: rgba(#000, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    margin: 1.5rem;
+    padding: 0.68em;
+
+    &--cv {
+      border-radius: 8px;
+      border: 2px solid $color-blue-dark;
+    }
+
+    &:hover,
+    &:visited {
+      background-color: $color-green-fluo;
+      color: $color-blue-dark;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  }
+
+  // FUNCTIONALITY
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  // ICON
+}
+
+#nav-icon {
+  &--bars {
+    font-size: 2.5rem;
+  }
+  &--close {
+    font-size: 3rem;
+
+    display: none;
+  }
+}

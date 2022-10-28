@@ -1,0 +1,49 @@
+/*
+0 - 600 px :    Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800px] is where normal style apply
+1800 + :        big desktop 
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  @include respond(big-desktop) {
+    font-size: 76%;
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient($color-blue-dark, $color-blue-light);
+  background-size: cover;
+}
