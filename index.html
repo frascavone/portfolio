@@ -20,8 +20,12 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
-        <i class="fa-solid fa-bars" id="nav-icon--bars"></i>
-        <i class="fa-solid fa-xmark" id="nav-icon--close"></i>
+        <svg id="nav-icon--bars">
+          <use xlink:href="img/sprite.svg#icon-bars"></use>
+        </svg>
+        <svg id="nav-icon--close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
       </label>
       <div class="navigation__background">&nbsp;</div>
 
@@ -112,42 +116,48 @@
       <span class="section__title skills__title">skills</span>
       <div class="skills__row">
         <div class="skills__box">
-          <i class="skills__icon fa-brands fa-html5"></i>
-
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-html-five"></use>
+          </svg>
           <p class="skills__text">Creazione di pagine web in codice HTML</p>
         </div>
         <div class="skills__box">
-          <i class="skills__icon fa-brands fa-sass"></i>
-
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-sass"></use>
+          </svg>
           <p class="skills__text">
             Formattazione stile pagine web responsive con CSS e SASS
           </p>
         </div>
         <div class="skills__box">
-          <i class="skills__icon fa-brands fa-js"></i>
-
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-javascript"></use>
+          </svg>
           <p class="skills__text">
             Creazione di funzioni, OOP e AJAX in Javascript
           </p>
         </div>
 
         <div class="skills__box">
-          <i class="skills__icon fa-solid fa-database"></i>
-
-          <p class="skills__text">Gestione dei database MySQL</p>
-        </div>
-        <div class="skills__box">
-          <i class="skills__icon fa-brands fa-php"></i>
-
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+          </svg>
           <p class="skills__text">
-            Gestione dati inseriti e invio email in PHP
+            Creazione di pagine web con l'uso di componenti Bootstrap
           </p>
         </div>
         <div class="skills__box">
-          <i class="skills__icon fa-brands fa-bootstrap"></i>
-
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-mysql"></use>
+          </svg>
+          <p class="skills__text">Gestione dei database MySQL</p>
+        </div>
+        <div class="skills__box">
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-php"></use>
+          </svg>
           <p class="skills__text">
-            Creazione di pagine web con l'uso di componenti Bootstrap
+            Gestione dati inseriti e invio email in PHP
           </p>
         </div>
       </div>
@@ -380,10 +390,6 @@
         </a>
       </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/643c5ce1d6.js"
-      crossorigin="anonymous"
-    ></script>
     <script>
       const checkbox = document.getElementById('navi-toggle');
       const navItems = document.querySelectorAll('.navigation__item');

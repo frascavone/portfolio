@@ -34,11 +34,13 @@
   }
 
   &__icon {
-    font-size: 6em;
-    background-image: linear-gradient(to right, #20e73b, #17d417);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    height: 6.5rem;
+    width: 6.5rem;
+    fill: #17d417;
+    // background-image: linear-gradient(to right, #20e73b, #17d417);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
     margin-bottom: 1rem;
   }
 

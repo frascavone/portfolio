@@ -394,10 +394,15 @@ body {
 }
 
 #nav-icon--bars {
-  font-size: 2.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  fill: #24fe41;
+  font-weight: 800;
 }
 #nav-icon--close {
-  font-size: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  fill: #24fe41;
   display: none;
 }
 
@@ -450,11 +455,9 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 .skills__icon {
-  font-size: 6em;
-  background-image: linear-gradient(to right, #20e73b, #17d417);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  height: 6.5rem;
+  width: 6.5rem;
+  fill: #17d417;
   margin-bottom: 1rem;
 }
 .skills__text {
