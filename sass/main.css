@@ -167,7 +167,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 6rem 0 6rem 6rem;
+  padding: 0 0 6rem 6rem;
   white-space: nowrap;
 }
 @media (max-width: 56.25rem) {
@@ -270,6 +270,13 @@ body {
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contacts__icon {
+  height: 5rem;
+  width: 5rem;
+  fill: lightgray;
+  margin-top: 2rem;
 }
 
 .social__links {
@@ -419,6 +426,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 3.5rem;
+}
+.projects__icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  fill: #1e3c72;
 }
 
 .skills {

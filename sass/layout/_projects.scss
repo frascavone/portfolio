@@ -11,4 +11,9 @@
     justify-content: space-around;
     margin-bottom: 3.5rem;
   }
+  &__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: $color-blue-dark;
+  }
 }
