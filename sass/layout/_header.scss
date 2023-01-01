@@ -1,7 +1,7 @@
 .hero {
   min-height: 95vh;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
 
   &__tiny {
     color: $color-green-fluo;
-    font-size: $font-size-normal;
+    font-size: $font-size-medium;
     font-family: $font-mono;
   }
   &__name {

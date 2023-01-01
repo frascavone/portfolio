@@ -162,7 +162,7 @@ body {
 .hero {
   min-height: 95vh;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +177,7 @@ body {
 }
 .hero__tiny {
   color: #24fe41;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: "Space Mono", monospace;
 }
 .hero__name {
@@ -469,7 +469,6 @@ body {
 .skills__icon {
   height: 6.5rem;
   width: 6.5rem;
-  fill: #17d417;
   margin-bottom: 1rem;
 }
 .skills__text {
