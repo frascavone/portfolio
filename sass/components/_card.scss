@@ -73,6 +73,14 @@
           ),
           url(../img/forkify.png);
       }
+      &--hangman {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/hangman.png);
+      }
     }
 
     &--back {

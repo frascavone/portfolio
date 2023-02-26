@@ -39,7 +39,7 @@ $breakpoint argument choices:
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  max-width: 120rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 @media (min-width: 112.5rem) {
@@ -86,20 +86,6 @@ body {
   letter-spacing: 0.5rem;
 }
 
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -113,19 +99,6 @@ body {
     transform: translateX(0);
   }
 }
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -133,16 +106,6 @@ body {
   }
   80% {
     transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
   }
   100% {
     opacity: 1;
@@ -165,9 +128,9 @@ body {
   font-weight: 700;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
-  padding: 0 0 6rem 6rem;
+  padding: 15rem 0 6rem 6rem;
   white-space: nowrap;
 }
 @media (max-width: 56.25rem) {
@@ -177,22 +140,18 @@ body {
 }
 .hero__tiny {
   color: #24fe41;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: "Space Mono", monospace;
 }
 .hero__name {
   color: #fff;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
 }
 .hero__info {
   color: lightgray;
-  -webkit-animation: moveInRight 1.5s;
-          animation: moveInRight 1.5s;
+  animation: moveInRight 1.5s;
 }
 .hero__btn {
   margin-top: 1rem;
@@ -229,8 +188,9 @@ body {
 .about__info {
   width: 50%;
   height: 100%;
-  font-size: 1.75rem;
-  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
 }
 @media (max-width: 37.5rem) {
   .about__info {
@@ -246,7 +206,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .propic {
@@ -260,7 +220,7 @@ body {
   width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: #fff;
 }
@@ -290,7 +250,7 @@ body {
   justify-content: end;
   align-items: center;
   max-width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Space Mono", monospace;
 }
 .nav-bar__item {
@@ -372,7 +332,7 @@ body {
   text-align: center;
 }
 .navigation__link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Space Mono", monospace;
   font-weight: 400;
   color: #1e3c72;
@@ -449,7 +409,7 @@ body {
   box-sizing: border-box;
   width: 30%;
   background-color: #eee;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding: 2.5rem;
   margin: 1.25rem;
   text-align: center;
@@ -504,10 +464,8 @@ body {
   transform: translateY(-1px);
 }
 .btn--animated {
-  -webkit-animation: moveInBottom 0.8s ease-out 0.8s;
-          animation: moveInBottom 0.8s ease-out 0.8s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation: moveInBottom 0.8s ease-out 0.8s;
+  animation-fill-mode: backwards;
 }
 
 .card {
@@ -519,7 +477,7 @@ body {
   margin: 1.5rem 0 1.5rem;
 }
 .card__side {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 40rem;
   transition: all 0.8s;
   position: absolute;
@@ -556,6 +514,9 @@ body {
 }
 .card__side--front--forkify {
   background-image: linear-gradient(to right bottom, rgba(30, 60, 114, 0.5), rgba(42, 82, 152, 0.5)), url(../img/forkify.png);
+}
+.card__side--front--hangman {
+  background-image: linear-gradient(to right bottom, rgba(30, 60, 114, 0.5), rgba(42, 82, 152, 0.5)), url(../img/hangman.png);
 }
 .card__side--back {
   background-color: #f7f7f7;

@@ -4,9 +4,9 @@
   font-weight: 700;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
-  padding: 0 0 6rem 6rem;
+  padding: 15rem 0 6rem 6rem;
   white-space: nowrap;
   @include respond(tab-port) {
     min-height: 100vh;
