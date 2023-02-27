@@ -518,6 +518,9 @@ body {
 .card__side--front--hangman {
   background-image: linear-gradient(to right bottom, rgba(30, 60, 114, 0.5), rgba(42, 82, 152, 0.5)), url(../img/hangman.png);
 }
+.card__side--front--mytutor {
+  background-image: linear-gradient(to right bottom, rgba(30, 60, 114, 0.5), rgba(42, 82, 152, 0.5)), url(../img/mytutor.png);
+}
 .card__side--back {
   background-color: #f7f7f7;
   padding: 1.5rem;
@@ -543,6 +546,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 .card__text--cta {
   text-decoration: none;
