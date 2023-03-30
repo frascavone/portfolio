@@ -30,6 +30,15 @@
       align-items: center;
       color: $color-green-fluo;
 
+      &--user-onboarding {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(30, 60, 114, 0.5),
+            rgba(42, 82, 152, 0.5)
+          ),
+          url(../img/user-onboarding.png);
+      }
+
       &--volare {
         background-image: linear-gradient(
             to right bottom,

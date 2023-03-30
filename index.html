@@ -94,9 +94,9 @@
             di mettermi sempre alla prova con nuove sfide.
           </p> -->
           <p class="about__info-text">
-            Da sempre affascinato dal mondo dell'informatica, nel 2021 ho
-            seguito un corso professionale per Programmatore Informatico, e da
-            un anno sto studiando sviluppo web da autodidatta.
+            Da sempre affascinato dal mondo dell'informatica, ho seguito un
+            corso professionale per Programmatore Informatico, e studio sviluppo
+            web front-end da autodidatta.
           </p>
           <div class="about__btn">
             <a
@@ -117,6 +117,30 @@
       <div class="skills__row">
         <div class="skills__box">
           <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-react"></use>
+          </svg>
+          <p class="skills__text">
+            Creazione di interfacce grafiche con framework React
+          </p>
+        </div>
+        <div class="skills__box">
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-vue"></use>
+          </svg>
+          <p class="skills__text">
+            Creazione di interfacce grafiche con framework Vue
+          </p>
+        </div>
+        <div class="skills__box">
+          <svg class="skills__icon">
+            <use xlink:href="img/sprite.svg#icon-javascript"></use>
+          </svg>
+          <p class="skills__text">
+            Creazione di funzioni, OOP e AJAX in Javascript ES6
+          </p>
+        </div>
+        <div class="skills__box">
+          <svg class="skills__icon">
             <use xlink:href="img/sprite.svg#icon-html-five"></use>
           </svg>
           <p class="skills__text">Creazione di pagine web in codice HTML</p>
@@ -129,15 +153,13 @@
             Formattazione stile pagine web responsive con CSS e SASS
           </p>
         </div>
+
         <div class="skills__box">
           <svg class="skills__icon">
-            <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            <use xlink:href="img/sprite.svg#icon-mysql"></use>
           </svg>
-          <p class="skills__text">
-            Creazione di funzioni, OOP e AJAX in Javascript
-          </p>
+          <p class="skills__text">Gestione dei database MySQL</p>
         </div>
-
         <div class="skills__box">
           <svg class="skills__icon">
             <use xlink:href="img/sprite.svg#icon-php"></use>
@@ -155,26 +177,48 @@
             Creazione di pagine web con l'uso di componenti Bootstrap
           </p>
         </div>
-        <div class="skills__box">
-          <svg class="skills__icon">
-            <use xlink:href="img/sprite.svg#icon-mysql"></use>
-          </svg>
-          <p class="skills__text">Gestione dei database MySQL</p>
-        </div>
-        <div class="skills__box">
-          <svg class="skills__icon">
-            <use xlink:href="img/sprite.svg#icon-vue"></use>
-          </svg>
-          <p class="skills__text">
-            Creazione di interfacce grafiche con framework Vue.js
-          </p>
-        </div>
       </div>
     </section>
 
     <section id="projects" class="projects">
       <span class="section__title">progetti</span>
       <div class="projects__row">
+        <div class="card">
+          <div
+            class="card__side card__side--front card__side--front--user-onboarding"
+          >
+            <span>User onboarding</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Form in 3 step realizzato con React per l'onboarding utente. Ho
+                usato React router per la navigazione tra gli step del form,
+                ogni campo è validato e testato, i dati vengono conservati
+                temporaneamente nel localStorage.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/user-onboarding"
+              >
+                <svg class="projects__icon">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://user-onboarding-frascavone.netlify.app/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
         <div class="card">
           <div class="card__side card__side--front card__side--front--mytutor">
             <span>myTutor</span>
@@ -188,12 +232,16 @@
               </p>
             </span>
             <span class="card__text card__text--cta">
-              <a rel="noreferrer" target="_blank" href="https://github.com/frascavone/myTutor/">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/myTutor/"
+              >
                 <svg class="projects__icon">
                   <use xlink:href="img/sprite.svg#icon-github"></use>
                 </svg>
               </a>
-<!--               <a
+              <!--               <a
                 rel="noreferrer"
                 target="_blank"
                 class="btn btn__dark"
@@ -204,7 +252,107 @@
             </span>
           </div>
         </div>
+        <div class="card">
+          <div class="card__side card__side--front card__side--front--hangman">
+            <span>Hangman</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Il gioco dell’impiccato. <br />
+                La parola è pescata casualmente da una API esterna.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/hangman-game"
+              >
+                <svg class="projects__icon">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://frascavone.github.io/hangman-game/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__side card__side--front card__side--front--volare">
+            <span>Volare</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Una web app dove l'utente prenota dei finti voli tra i
+                principali aeroporti italiani, interrogando un database di
+                tratte aeree di mia creazione, con l'implementazione di PayPal.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/volare"
+              >
+                <svg class="projects__icon">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://www.frascavone.it/volare/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
 
+        <div class="card">
+          <div
+            class="card__side card__side--front card__side--front--indovina-il-numero"
+          >
+            <span>Indovina il numero</span>
+          </div>
+          <div class="card__side card__side--back">
+            <span class="card__text">
+              <p>
+                Piccolo gioco in cui l'utente cerca di indovinare un numero
+                generato randomicamente dall'app. <br />
+                Esercizio sulla manipolazione del DOM.
+              </p>
+            </span>
+            <span class="card__text card__text--cta">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/frascavone/Indovina-il-numero"
+              >
+                <svg class="projects__icon">
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="btn btn__dark"
+                href="https://frascavone.github.io/Indovina-il-numero/"
+              >
+                Esplora
+              </a>
+            </span>
+          </div>
+        </div>
         <div class="card">
           <div class="card__side card__side--front card__side--front--mapty">
             <span>Mapty</span>
@@ -274,73 +422,6 @@
             </span>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card__side card__side--front card__side--front--volare">
-            <span>Volare</span>
-          </div>
-          <div class="card__side card__side--back">
-            <span class="card__text">
-              <p>
-                Una web app dove l'utente prenota dei finti voli tra i
-                principali aeroporti italiani, interrogando un database di
-                tratte aeree di mia creazione, con l'implementazione di PayPal.
-              </p>
-            </span>
-            <span class="card__text card__text--cta">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/frascavone/volare"
-              >
-                <svg class="projects__icon">
-                  <use xlink:href="img/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="btn btn__dark"
-                href="https://www.frascavone.it/volare/"
-              >
-                Esplora
-              </a>
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__side card__side--front card__side--front--hangman">
-            <span>Hangman</span>
-          </div>
-          <div class="card__side card__side--back">
-            <span class="card__text">
-              <p>
-                Il gioco dell’impiccato. <br />
-                La parola è pescata casualmente da una API esterna.
-              </p>
-            </span>
-            <span class="card__text card__text--cta">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/frascavone/hangman-game"
-              >
-                <svg class="projects__icon">
-                  <use xlink:href="img/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="btn btn__dark"
-                href="https://frascavone.github.io/hangman-game/"
-              >
-                Esplora
-              </a>
-            </span>
-          </div>
-        </div>
-
         <div class="card">
           <div
             class="card__side card__side--front card__side--front--to-do-list"
@@ -370,42 +451,6 @@
                 target="_blank"
                 class="btn btn__dark"
                 href="https://frascavone.github.io/to-do-list/"
-              >
-                Esplora
-              </a>
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div
-            class="card__side card__side--front card__side--front--indovina-il-numero"
-          >
-            <span>Indovina il numero</span>
-          </div>
-          <div class="card__side card__side--back">
-            <span class="card__text">
-              <p>
-                Piccolo gioco in cui l'utente cerca di indovinare un numero
-                generato randomicamente dall'app. <br />
-                Esercizio sulla manipolazione del DOM.
-              </p>
-            </span>
-            <span class="card__text card__text--cta">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/frascavone/Indovina-il-numero"
-              >
-                <svg class="projects__icon">
-                  <use xlink:href="img/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="btn btn__dark"
-                href="https://frascavone.github.io/Indovina-il-numero/"
               >
                 Esplora
               </a>
