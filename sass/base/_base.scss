@@ -44,6 +44,5 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient($color-blue-dark, $color-blue-light);
-  background-size: cover;
+  background: radial-gradient($color-blue-dark, $color-blue-light);  
 }
